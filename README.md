@@ -3,9 +3,6 @@
 
 A customizable and reusable modal component for React applications. Perfect for confirming actions like employee deletion or any other action requiring user confirmation.
 
-## Demo
-
-You can see a live demo of the Modal Component [here](http://localhost:5174/demo).
 
 ## Installation
 
