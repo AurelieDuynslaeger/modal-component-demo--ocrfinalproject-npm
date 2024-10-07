@@ -19,4 +19,5 @@ export default defineConfig({
             },
         },
     },
+    base: 'modal-component-demo--ocrfinalproject-npm',
 });
