@@ -8,7 +8,7 @@
     "build": "vite build",
     "dev": "vite",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "react",
@@ -29,5 +29,4 @@
     "react-router-dom": "^6.26.2"
   },
   "homepage": "https://aurelieduynslaeger.github.io/modal-component-demo--ocrfinalproject-npm/"
-  
 }
