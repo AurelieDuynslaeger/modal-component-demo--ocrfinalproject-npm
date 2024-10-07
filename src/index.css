@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    background-color:#2F2F31;
+   display: flex;
+   align-items: center;
+}
+
+.buttons-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   height: 80vh;
+   width: 50vw;
+   margin: auto;
+}
+
+.buttons-container button{
+    border: none;
+    width: 20vw;
+    padding: 10px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #A856FE;
+    color: white;
+    font-size: 15px;
+}
+
+.modal-container{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
