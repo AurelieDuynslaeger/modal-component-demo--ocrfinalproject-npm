@@ -1,6 +1,6 @@
 {
   "name": "modal-component-ocr-finalproject",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple modal component for React.",
   "main": "src/Modal.jsx",
   "scripts": {
