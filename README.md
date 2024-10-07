@@ -15,22 +15,22 @@ npm install react react-dom
 Then, you can install the `modal-component` via npm:
 
 ```bash
-npm install modal-component
+npm install modal-component-ocr-finalproject
 ```
 
 Or, if you use Yarn:
 
 ```bash
-yarn add modal-component
+yarn add modal-component-ocr-finalproject
 ```
 
 ## Usage
 
-Here's a basic example of how to use the `Modal` component in your project:
+Here's a basic example of how to use the `ModalComponent` component in your project:
 
 ```jsx
 import React, { useState } from 'react';
-import Modal from 'modal-component';
+import ModalComponenent from 'modal-component-ocr-finalproject';
 
 const App = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,7 @@ const App = () => {
     return (
         <div>
             <button onClick={handleOpen}>Open Modal</button>
-            <Modal
+            <ModalComponenent
                 isOpen={isOpen}
                 title="Delete Employee"
                 text="Are you sure you want to delete this employee?"
@@ -95,7 +95,7 @@ export default App;
 ## Example
 
 ```jsx
-<Modal
+<ModalComponenent
     isOpen={true}
     title="Delete Confirmation"
     text="Are you sure you want to delete this item?"
