@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "keywords": [
     "react",
@@ -17,6 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.2",
+    "gh-pages": "^6.1.1",
     "vite": "^5.4.8"
   },
   "dependencies": {
@@ -24,5 +27,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2"
-  }
+  },
+  "homepage": "https://aurelieduynslaeger.github.io/modal-component-demo--ocrfinalproject-npm/"
+  
 }
