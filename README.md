@@ -1,4 +1,3 @@
-
 # Modal Component
 
 A customizable and reusable modal component for React applications. Perfect for confirming actions like employee deletion or any other action requiring user confirmation.
@@ -30,7 +29,7 @@ Here's a basic example of how to use the `ModalComponent` component in your proj
 
 ```jsx
 import React, { useState } from 'react';
-import ModalComponenent from 'modal-component-ocr-finalproject';
+import ModalComponent from 'modal-component-ocr-finalproject';
 
 const App = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +50,7 @@ const App = () => {
     return (
         <div>
             <button onClick={handleOpen}>Open Modal</button>
-            <ModalComponenent
+            <ModalComponent
                 isOpen={isOpen}
                 title="Delete Employee"
                 text="Are you sure you want to delete this employee?"
@@ -95,7 +94,7 @@ export default App;
 ## Example
 
 ```jsx
-<ModalComponenent
+<ModalComponent
     isOpen={true}
     title="Delete Confirmation"
     text="Are you sure you want to delete this item?"
