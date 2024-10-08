@@ -1,6 +1,6 @@
-# Modal Component
+## Modal Component
 
-A customizable and reusable modal component for React applications. Perfect for confirming actions like employee deletion or any other action requiring user confirmation.
+A customizable and reusable modal component for React applications. Perfect for confirming actions like employee deletion or any other action requiring user confirmation. This component can be easily integrated into any React app and styled according to your design requirements.
 
 ## Installation
 
@@ -54,8 +54,8 @@ const App = () => {
         title="Delete Employee"
         text="Are you sure you want to delete this employee?"
         onClose={handleClose}
-        primaryButton={{ label: 'Delete', onClick: primaryAction }}
-        secondaryButton={{ label: 'Cancel', onClick: secondaryAction }}
+        primaryButton={{ label: 'Delete', onClick: primaryAction, style: { backgroundColor: "#F5F9CE", color: "#000" } }}
+        secondaryButton={{ label: 'Cancel', onClick: secondaryAction, style: { backgroundColor: "#ccc", color: "#000" } }}
         style={{
           backgroundColor: '#f9f9f9',
           color: '#333',
@@ -79,8 +79,14 @@ export default App;
 | `title`           | `string` | The title of the modal.                                                                                                                          | No       | `null`            |
 | `text`            | `string` | The main text or content inside the modal.                                                                                                       | Yes      | N/A               |
 | `onClose`         | `func`   | Callback function triggered when the modal is closed (either by clicking outside or pressing the escape key).                                     | Yes      | N/A               |
-| `primaryButton`   | `object` | Object containing the label and onClick handler for the primary button.                                                                           | No       | `null`            |
-| `secondaryButton` | `object` | Object containing the label and onClick handler for the secondary button.                                                                         | No       | `null`            |
+| `primaryButton`   | `object` | Object containing the label, onClick handler, and optional styles for the primary button.                                                         | No       | `null`            |
+| `primaryButton.label`   | `string` | The text to display on the primary button.                                                                                                        | Yes      | N/A               |
+| `primaryButton.onClick` | `func`   | The function to call when the primary button is clicked.                                                                                          | Yes      | N/A               |
+| `primaryButton.style` | `object` | Custom styles for the primary button, passed as an object of CSS properties.                                                                       | No       | `{}`              |
+| `secondaryButton` | `object` | Object containing the label, onClick handler, and optional styles for the secondary button.                                                       | No       | `null`            |
+| `secondaryButton.label` | `string` | The text to display on the secondary button.                                                                                                      | Yes      | N/A               |
+| `secondaryButton.onClick` | `func`   | The function to call when the secondary button is clicked.                                                                                        | Yes      | N/A               |
+| `secondaryButton.style` | `object` | Custom styles for the secondary button, passed as an object of CSS properties.                                                                     | No       | `{}`              |
 | `style`           | `object` | Custom styles for the modal, passed as an object of CSS properties.                                                                               | No       | `{}`              |
 
 ## Example
@@ -115,12 +121,12 @@ export default App;
 - **Keyboard Support**: Close the modal by pressing the `Escape` key.
 - **Flexible**: Define actions for primary and secondary buttons.
 - **Responsive**: Adjusts well to different screen sizes.
+- **User-friendly**: Closes on clicking outside the modal.
 
 ## Contribution
 
-Contributions are welcome! If you find any bugs or want to add new features, feel free to open an issue or submit a pull request.
+Contributions are welcome! If you find any bugs or want to add new features, feel free to open an issue or submit a pull request. Please follow the [contribution guidelines](CONTRIBUTING.md).
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-

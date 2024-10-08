@@ -8,7 +8,7 @@ const Modal = ({
   onClose,
   primaryButton,
   secondaryButton,
-  style = {},  // Prop unique pour les styles
+  style = {}, 
 }) => {
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const Modal = ({
       <div
         className="modal-container"
         onClick={(e) => e.stopPropagation()}
-        style={style}  // Application des styles passés via la prop `style`
+        style={style} 
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-title"
@@ -51,12 +51,12 @@ const Modal = ({
         </div>
         <div className="modal-footer">
           {primaryButton && (
-            <button onClick={primaryButton.onClick} aria-label={primaryButton.label}>
+            <button onClick={primaryButton.onClick} aria-label={primaryButton.label} style={primaryButton.style}>
               {primaryButton.label}
             </button>
           )}
           {secondaryButton && (
-            <button onClick={secondaryButton.onClick} aria-label={secondaryButton.label}>
+            <button onClick={secondaryButton.onClick} aria-label={secondaryButton.label} style={secondaryButton.style}>
               {secondaryButton.label}
             </button>
           )}
