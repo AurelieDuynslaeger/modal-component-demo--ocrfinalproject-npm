@@ -125,7 +125,13 @@ export default App;
 
 ## Contribution
 
-Contributions are welcome! If you find any bugs or want to add new features, feel free to open an issue or submit a pull request. Please follow the [contribution guidelines](CONTRIBUTING.md).
+Feel free to contribute to this project! You can find the repository on GitHub:
+
+[GitHub Repo](https://github.com/AurelieDuynslaeger/modal-component-demo--ocrfinalproject-npm)
+
+The Demo is [here](https://modal-component-demo.vercel.app/).
+
+If you encounter any issues or have suggestions, please submit an issue or a pull request. We value your feedback!
 
 ## License
 
